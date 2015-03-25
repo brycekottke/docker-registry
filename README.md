@@ -28,9 +28,9 @@ Navigate back to wherever you cloned this repository.
 On the client host (your computer), copy the following files over from your docker registry
 server and place them in the directory listed below. client.key, client.crt, ca.crt.
 
-/etc/docker/certs.d/registry.yourcompany.com
+/etc/docker/certs.d/registry.yourdomain.com
 ```
-Example: /etc/docker/certs.d/dockerhub.redapt.com/
+Example: /etc/docker/certs.d/registry.yourdomain.com/
 ```
 #####IMPORTANT!
 You have to rename the 'client.crt' file to 'client.cert' in order for the docker CLI tools
@@ -38,10 +38,10 @@ to authenticate to your new docker registry server.
 
 You can verify SSL is working with the following curl command
   ```
-  $ curl -v -s -k --key client.key --cert client.crt https://dockerhub.redapt.com
+  $ curl -v -s -k --key client.key --cert client.crt https://registry.yourdomain.com
   ```
 Tag your docker image appropriately and push to our private docker registry
   ```
-  $ docker tag ubuntu dockerhub.redapt.com/ubuntu
+  $ docker tag ubuntu registry.yourdomain.com/ubuntu
   ```
 Boom! All done!
