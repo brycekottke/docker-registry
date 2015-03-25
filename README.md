@@ -26,7 +26,7 @@ Navigate back to wherever you cloned this repository.
   $ docker build -t nginx-registry .
   
   $ docker run --name nginx-registry -d --link registry:registry -v /app/certs:/etc/nginx/certs -p 443:443 nginx-registry
-
+  -----
 ####4. Setup / Configure your docker client (your computer)
 
 On the client host (your computer), copy the following files over from your docker registry
@@ -35,7 +35,7 @@ server and place them in the directory listed below. client.key, client.crt, ca.
 /etc/docker/certs.d/registry.yourcompany.com
 
 Example: /etc/docker/certs.d/dockerhub.redapt.com/
-
+  -----
 #####IMPORTANT!
 You have to rename the 'client.crt' file to 'client.cert' in order for the docker CLI tools
 to authenticate to your new docker registry server.
