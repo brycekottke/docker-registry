@@ -3,7 +3,7 @@
   
   $ ./deploy-registry.sh
   -----
-####2. Generate your Signed server and client certificate and keys
+####2. Generate your Signed server and client certificate / keys
 
 When generating the keys and certs the only necessary thing to enter is the password
 (which we will remove with the generate-ca.sh script) and the DNS name of your private
