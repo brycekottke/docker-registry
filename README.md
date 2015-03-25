@@ -14,7 +14,6 @@ Example: Common Name (e.g. server FQDN or YOUR name): registry.mydomain.com
   $ cd /app/certs
   $ ./generate-ca.sh
   
-
 #####3. Build your nginx-registry container and run nginx-registry container
 
 Navigate back to wherever you cloned this repository.
