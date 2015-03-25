@@ -1,8 +1,8 @@
 ####1. Fill out the deploy-registry.sh script with necessary s3 bucket info.
+  ```
   $ vi deploy-registry.sh
-  
   $ ./deploy-registry.sh
-  -----
+  ```
 ####2. Generate your Signed server and client certificate / keys
 
 When generating the keys and certs the only necessary thing to enter is the password
