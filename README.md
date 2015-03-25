@@ -2,14 +2,15 @@
   $ vi deploy-registry.sh
   
   $ ./deploy-registry.sh
-  
+  -----
 ####2. Generate your Signed server and client certificate and keys
 
 When generating the keys and certs the only necessary thing to enter is the password
 (which we will remove with the generate-ca.sh script) and the DNS name of your private
 registry you will be setting up.
 
-Example: Common Name (e.g. server FQDN or YOUR name): registry.mydomain.com
+**Example: Common Name (e.g. server FQDN or YOUR name): registry.mydomain.com**
+
   $ mkdir -p /app/certs
   
   $ mv generate-ca.sh /app/certs
@@ -17,7 +18,7 @@ Example: Common Name (e.g. server FQDN or YOUR name): registry.mydomain.com
   $ cd /app/certs
   
   $ ./generate-ca.sh
-  
+  -----
 ####3. Build your nginx-registry container and run nginx-registry container
 
 Navigate back to wherever you cloned this repository.
